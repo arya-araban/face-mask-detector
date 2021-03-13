@@ -72,11 +72,6 @@ while True:
             whatToPrint = "mask"
             color = (0, 255, 0)
 
-    if pressedKey == ord("p"):
-        crop_img = preprocess_image(crop_img)
-        prediction = loaded_model.predict(crop_img)
-        print(prediction)
-
     cur_frame += 1
 # When everything is done, release the capture
 video_capture.release()
